@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+.sb{
+    border: none !important;
+    border-radius: 10px;
+    padding: 40px;
+    width: 70%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.font1{
+    font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font2{
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn1 {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #343a40;
+  box-shadow: 0 5px #212529;
+}
+.btn1:hover {
+  box-shadow: 0 3px #212529;
+  top: 1px;
+}
+.btn1:active {
+  box-shadow: 0 0 #212529;
+  top: 5px;
+}
+
+.yy{
+  font-size: 20px;
+
+
+}
+.moo{
+  font-size: 20px;
+  margin-left: 15px;
+
+}
+
+.daa{
+  font-size: 20px;
+  margin-left: 15px;
+
+}
+.vid1{
+  margin-top: 25%;
+  margin-left: -50px;
+}
+.nb{
+  position: absolute;
+  display: flex;
+  top: 80%;
+  margin-left: 29%;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.you{
+  position: absolute;
+  top: 84%;
+  left: 48%;
+}

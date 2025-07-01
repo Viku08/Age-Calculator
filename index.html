@@ -1,0 +1,319 @@
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      #view{
+        display: none;
+      }
+      #notborn{
+        display: none;
+      }
+
+      #yu{
+        display: none;
+      }#nage{
+        display: none;
+      }
+
+    </style>
+</head>
+<body>
+  <div style="background-color: black;">
+    <h1>_</h1>
+    <div>
+    <img src="./images (1).png" style="position: absolute;left: 47%;top: 37px;" width="90px" alt="">
+  </div>
+  </div>
+
+  <!-- dsjhd -->
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div>
+          <img src="./original-17fc7dc2cd42e0c9fb7d6ae10e06724f.webp" style="position: fixed;top: 22%;left: -20px;" width="490px" alt="">
+        </div>
+     <div class="sb card  text-center " style="margin-left: 7%;margin-top: 36%;">
+      
+      <h3 class="font1">Age Calculator</h3>
+     <input class="form-control" type="date" id="date2" >
+     <button  class="btn1 mt-3" onclick="calc()" >calc</button>
+     </div>
+
+     <div style="display: flex;margin-top:40px;margin-left: 6%;">
+      <div class=" you font2">
+          <p id="yu">You are</p>
+        </div>
+        <div  class="nb">
+        <div class="yy font2"  >
+        <p id="year"></p>
+
+      </div>
+      <div class="moo font2">
+        <p id="months"></p>
+      </div>
+      <div class="daa font2">
+        <p id="days"></p>
+
+      </div>
+      </div>
+      <div>
+        <p id="notborn" class="nb font2">You're not yet born Hero! </p>
+        
+      </div>
+      <div style="margin-top: -100px;margin-left: 60px;">
+        <p id="nage" class="nb font2">Enter Your Age! </p>
+        
+      </div>
+
+     </div>
+     </div>
+     <div class="col-6">
+
+      <div style="margin-top: 40%;display: flex;" id="hide" >
+        <div>
+        <h1 class="mt-3" style="width: 160%;font-size: 30px;margin-left: -100px;">Get Your age and Know your <span style="color: white;">Power!</span> </h1>
+        <img src="./minimalist-painting-single-bold-brushstroke-blank-canvas-ai-generated-358068321-Photoroom.png" style="position: absolute;top: 45%;left: 43%;z-index: -2;rotate: -6deg;" width="290px" alt="">
+        </div>
+        <img src="./istockphoto-1441638637-612x612.jpg" style="margin-right: -95px;margin-top: -90px;" width="90%" alt="">
+      </div>
+      <div id="view">
+      <div class="vid1" >
+           <video id="v1" src="./mp4-unscreen.mp4" autoplay loop></video>
+      </div>
+      
+      <div>
+          <video id="v2" src="./A-Marvel-style-cartoon-child-s-unscreen.mp4" loop autoplay></video>
+      </div>
+
+      <div>
+        <video id="v3" src="./A-Marvel-style-cartoon-young-s-unscreen.mp4"  loop autoplay></video>
+      </div>
+      
+      <div>
+         <video id="v4" src="./A-Marvel-style-muscular-superh-unscreen.mp4" loop autoplay></video>
+      </div>
+
+      <div>
+        <video id="v5" src="./A-Marvel-style-muscular-superh-unscreen (1).mp4" loop autoplay></video>
+
+      </div>
+     
+      <div>
+        <video id="v6" src="./A-Marvel-style-superhero-calml-unscreen.mp4" loop autoplay></video>
+
+      </div>
+      <div>
+        <video id="v7" src="./oldage - Made with Clipchamp.mp4" width="90%" loop autoplay></video>
+
+      </div>
+      <div>
+        <video id="v8" src="./A-stylized-cartoon-baby-lookin-unscreen.mp4" loop autoplay></video>
+      </div>
+      <div>
+        <img id="v9" src="./window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.avif" style="width: 80%;" loop autoplay></img>
+      </div>
+
+      <!-- <div>
+        <img id="p1" src="./window-operating-system-error-warning-dialog-window-popup-message-with-system-failure-flat-design_812892-54.avif"  width="80%">
+      </div> -->
+      </div>
+      
+      
+      
+     </div>
+     </div>
+     </div>
+
+    
+    <footer>
+      <!-- <div>
+        <img src="./images (2).png" width="100px" alt="">
+      </div> -->
+    </footer>
+     
+
+     
+    
+
+
+    <script> 
+
+    function showVideo(videoToShow){
+      let  videoIds =['v1','v2','v3','v4','v5','v6','v7','v8','v9'];
+
+      for(let i=0;i< videoIds.length;i++){
+        document.getElementById(videoIds[i]).style.display='none'; //to hide all
+
+      }
+      document.getElementById(videoToShow).style.display='block';
+      document.getElementById('hide').style.display ='none';
+      document.getElementById('view').style.display ='block';
+       
+
+
+
+      if(videoToShow =='v8'){
+        document.getElementById('yu').style.display ='none';
+        document.getElementById('notborn').style.display ='block';
+      }
+      else if(videoToShow == 'v9'){
+        document.getElementById('notborn').style.display ='none ';
+        document.getElementById('nage').style.display ='block';
+
+      }
+      else{
+        document.getElementById('yu').style.display ='block';
+        document.getElementById('notborn').style.display ='none';
+        document.getElementById('year').style.display ='block' ;
+        document.getElementById('months').style.display ='block' ;
+        document.getElementById('days').style.display ='block' ;
+        document.getElementById('date2').style.display='block';
+
+
+
+      }
+
+    }
+
+        function calc(){
+            let a = document.getElementById('date2').value;
+
+            console.log(a);
+
+            let y = a.split('-')[0];
+            console.log(y);
+
+            let m = a.split('-')[1];
+            console.log(m)
+           
+            let d = a.split('-')[2]
+            console.log(d);
+            
+
+            let c = new Date().getFullYear();
+            // console.log(c)
+
+            let age = c - y;
+            // console.log(age);
+
+            let month = new Date().getMonth()+1;
+            // console.log(month);
+
+             
+
+            let day = new Date().getDate();
+            // console.log(day);
+
+            
+           //year
+            let res;
+
+          if(month >= m){
+             res = age;
+          }
+          else{
+            res = age-1;
+          }
+
+            //month
+            let mon;
+            mon = m - month;
+            let mm = Math.abs(mon);
+            if(month > m){
+              mm = 12-mm;
+
+              }
+
+            //days
+             let dd;
+             let t1 = new Date(c,month,0).getDate();
+             dd = d-day;
+             let ds = Math.abs(dd);
+              if(d > day ){
+                mm = 12-mm-1;
+                ds = t1-ds;
+                res = res-1;
+              }
+              console.log(res);//years            
+              console.log(Math.abs(mm));//month
+              console.log(Math.abs(ds));//days
+
+            
+              document.getElementById('year').innerHTML =  res +'-' + ' years' ;
+              document.getElementById('months').innerHTML = mm +'-'+ 'month' ;
+              document.getElementById('days').innerHTML = ds+'-'+ 'days' ;
+              document.getElementById('nage').style.display="none";
+
+
+              //ifexceeds
+              if(y>c || a==""){
+                document.getElementById('notborn').style.display='block';    
+                document.getElementById('year').style.display ='none';
+                 document.getElementById('months').style.display ='none';
+                document.getElementById('days').style.display ='none';
+                document.getElementById('nage').style.display="none";
+
+                  
+                  if(a==""){
+                document.getElementById('nage').style.display="block";
+                document.getElementById('notborn').style.display='none';
+                 document.getElementById('year').style.display ='none';
+                 document.getElementById('months').style.display ='none';
+                  document.getElementById('days').style.display ='none';
+                  
+
+                
+              }
+                  
+
+              } 
+
+              //ifnodata
+
+              
+
+              let veo1  = document.getElementById('v1');
+              let veo2 = document.getElementById('v2');
+              let veo3 = document.getElementById('v3');
+              let veo4 = document.getElementById('v4');
+              let veo5 = document.getElementById('v5');
+              let veo6 =document.getElementById('v6');
+              let veo7 = document.getElementById('v7');
+              let veo8 = document.getElementById('v8');
+              let see = document.getElementById('view');
+              let hid = document.getElementById('hide');
+              let nb = document.getElementById('notborn');
+              let youre = document.getElementById('yu');
+              
+             
+             
+
+              
+              
+              if(res <= 0 || y >c) showVideo('v8');  
+              else if( res <= 2) showVideo('v1');
+              else if( res <=5)showVideo('v2');
+              else if( res <=12)showVideo('v3');
+              else if( res<= 19)showVideo('v4');
+              else if( res <=40) showVideo('v5');
+              else if(res <= 60) showVideo('v6');
+              else if( res <= 90)showVideo('v7');
+              
+              else showVideo('v9');
+
+        }
+
+        
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    
+</body>
+</html>
