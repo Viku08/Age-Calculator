@@ -222,13 +222,21 @@
           }
 
             //month
-            let mon;
-            mon = m - month;
-            let mm = Math.abs(mon);
-            if(month > m){
-              mm = 12-mm;
+            // let mon;
+            // mon = m - month;
+            // let mm = Math.abs(mon);
+            // if(month > m){
+            //   mm = 12-mm;
 
-              }
+            //   }
+          let mm = month - m;
+          if (day < d) {
+          mm = mm - 1;
+          }
+          if (mm < 0) {
+          mm = mm + 12;
+          }
+
 
             //days
              let dd;
